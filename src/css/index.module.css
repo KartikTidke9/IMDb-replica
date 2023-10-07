@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.App {
+  /* color: white;
+  background-color: black; */
+}
+
+body {
+  /* overscroll-behavior: none; */
+  color: white;
+  background-color: black;
+}
+
+
+body::-webkit-scrollbar {
+  background-color: #fec107;
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: white;
+}
+
+body::-webkit-scrollbar-button{
+  background-color: red;
+  height: 1rem;
+}
+
+.move_to_top_btn {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 9999px;
+}
+
+.move_to_top_btn[data-open="true"] {
+  background-color: rgb(31, 31, 31);
+  cursor: pointer;
+  user-select: none;
+}
+
+.move_to_top_btn > span {
+  display: none;
+}
+
+.move_to_top_btn[data-open="true"] > span {
+  display: block;
+}

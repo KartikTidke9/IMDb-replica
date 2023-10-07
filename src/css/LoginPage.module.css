@@ -1,0 +1,42 @@
+.form_container {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  border: 4px solid #ffc107;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+  position: relative;
+  top: 5rem;
+  border-radius: 0.5rem;
+  width: 40rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  width: 100%;
+}
+
+.loading_icon{
+  animation: rotate 1s forwards infinite;
+}
+
+@keyframes rotate {
+  from{
+    rotate: 0;
+  }
+  to{
+    rotate: 360deg;
+  }
+}

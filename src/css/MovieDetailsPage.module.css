@@ -1,0 +1,27 @@
+.movie_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.paper {
+  display: grid;
+  grid-template-columns: 70% 29%;
+  gap: 1%;
+}
+
+.similar_movies::-webkit-scrollbar {
+  background-color: #fec107;
+  width: 0.2rem;
+}
+
+.similar_movies::-webkit-scrollbar-thumb{
+  background-color: white;
+}
+
+.similar_movies::-webkit-scrollbar-button{
+  background-color: red;
+  height: 0.3rem;
+}

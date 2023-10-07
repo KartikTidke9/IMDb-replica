@@ -1,0 +1,31 @@
+.card {
+  height: 25rem;
+  width: 15rem;
+  overflow-y: auto;
+  object-fit: "cover";
+  background-color: rgb(31,31,31);
+  margin: 0.5rem;
+}
+
+.card::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.card_content {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.card_content > h4 {
+  font-size: 1.1rem;
+}
+
+.card_content > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

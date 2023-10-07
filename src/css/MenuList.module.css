@@ -1,0 +1,27 @@
+.list_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+}
+
+.list_content {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 3.5rem;
+}
+
+.list_item {
+  list-style: none;
+  font-size: 1.2rem;
+}

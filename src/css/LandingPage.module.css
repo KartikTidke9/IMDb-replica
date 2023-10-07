@@ -1,0 +1,54 @@
+.landing_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 10rem;
+}
+
+.movie_tv_shows {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: #fec107;
+}
+
+.links {
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  border: 2px solid white;
+}
+
+.trending_shows {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80rem;
+  padding: 0.3rem;
+  min-height: 10rem;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
