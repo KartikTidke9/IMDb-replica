@@ -3,7 +3,7 @@ import axios from "axios";
 
 //add new user to db
 const addUser = createAsyncThunk("user/add", async (user) => {
-  const response = await axios.post("http://localhost:3001/users", {
+  const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/users`, {
     user,
   });
   return response.data;
@@ -11,7 +11,7 @@ const addUser = createAsyncThunk("user/add", async (user) => {
 
 //get the matched/loggedIn user
 const findUser = createAsyncThunk("user/find", async ({ email, password }) => {
-  const response = await axios.get("http://localhost:3001/users");
+  const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/users`);
 
   //finding the matched user
   // eslint-disable-next-line
